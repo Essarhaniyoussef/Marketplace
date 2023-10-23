@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Apple SF Heavy Font";
+  src: url("fonts/sf-pro-display-font/SF-Pro-Display-Heavy.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Apple SF Normal Font";
+  src: url("fonts/sf-pro-display-font/SF-Pro-Display-Bold.woff") format(woff);
+}
+
+:root {
+  --darkmain-color: #6d0178;
+  --main-color: #c100d6;
+  --text-color: #171427;
+  --bg-color: #fff;
+}
+
+* {
+  font-family: "Apple SF Normal Font";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.container .content {
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 17px;
+  background: black;
+  border-radius: 100px;
+  color: white;
+  margin: 0 5px;
+}
+
+.container .content .btn:hover {
+  background: grey;
+}
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* padding-bottom: 60px; */
+  background: #eee;
+}
+
+.form-container form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+  width: 500px;
+}
+
+.form-container form h2 {
+  font-size: 24px;
+  /* margin-bottom: 10px; */
+  color: #333;
+}
+
+.form-container form .heureux-title {
+  margin-top: 5px;
+}
+
+.form-container form .sec-title {
+  font-size: 22px;
+  margin-top: 5px;
+  color: #333;
+}
+
+.form-container form .design-img {
+  width: 80%;
+}
+
+.form-container form input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.form-container form .form-btn {
+  background: var(--main-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.form-container form p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-container form p a,
+.minimarket-title {
+  color: var(--main-color);
+}
+
+.form-container form p a:hover {
+  text-decoration: underline;
+}
+
+.form-container form .error-msg {
+  margin: 0 0 10px 0;
+  display: block;
+  color: red;
+  font-size: 14px;
+  padding: 0 10px 10px 10px;
+}
